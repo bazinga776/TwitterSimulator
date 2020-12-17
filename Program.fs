@@ -468,10 +468,7 @@ let websocketHandler (webSocket : WebSocket) (context: HttpContext) =
 
               match msg with
               | (Text, data, true) ->
-                // the message can be converted to a string
-                // printfn "%A" Text
                 let str = UTF8.toString data 
-                // printfn "%s" str
                 if str.StartsWith("UserName:") then
                     let uname = str.Split(':').[1]
                     websockmap <- websockmap.Add(uname,webSocket)
@@ -505,7 +502,7 @@ let app =
             allow_cors
             GET >=> choose
                 [ 
-                path "/" >=> OK "Hello World" 
+                path "/" >=> OK "Twitter Server Ok! Please start the twitter.html" 
                 pathScan "/gettweets/%s" (fun username -> (gettweets username))
                 pathScan "/getmentions/%s" (fun username -> (getmentions username))
                 pathScan "/gethashtags/%s/%s" (fun (username,hashtag) -> (gethashtags username hashtag))

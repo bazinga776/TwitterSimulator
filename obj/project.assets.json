@@ -6462,11 +6462,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Sindhu\\Desktop\\Web\\Fall20-DOS-Fsharp-master\\Proj4\\Proj4.fsproj",
+      "projectUniqueName": "C:\\Users\\Sindhu\\Desktop\\Proj4\\Proj4.fsproj",
       "projectName": "Proj4",
-      "projectPath": "C:\\Users\\Sindhu\\Desktop\\Web\\Fall20-DOS-Fsharp-master\\Proj4\\Proj4.fsproj",
+      "projectPath": "C:\\Users\\Sindhu\\Desktop\\Proj4\\Proj4.fsproj",
       "packagesPath": "C:\\Users\\Sindhu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Sindhu\\Desktop\\Web\\Fall20-DOS-Fsharp-master\\Proj4\\obj\\",
+      "outputPath": "C:\\Users\\Sindhu\\Desktop\\Proj4\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Sindhu\\AppData\\Roaming\\NuGet\\NuGet.Config",
