@@ -14,7 +14,7 @@
 * The server is run on localhost:8080
 * Now for the frontend, open twitter.html file in web browser
 
-For the functionalities implemented and code explanation, please see the below link
+## For the functionalities implemented and code explanation, please see the below link
 Video Explanation Link: https://youtu.be/CtXOuetXROo
 
 ## Code Explanation
