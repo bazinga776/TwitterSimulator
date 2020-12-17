@@ -18,9 +18,15 @@
 Video Explanation Link: https://youtu.be/CtXOuetXROo
 
 ## Code Explanation
-* We have two parts for the twitter application - Client.html and Program.fs
+* We have two parts for the twitter application - twitter.html and Program.fs
 * We have used suave.io for implementing the register, login, subscribe requests which are implemnted as endpoints for the POST requests
-* To query the tweets, see where the user is mentioned, also for returing the tweets with hashtags, we have used JSON GET requests
+* To query the tweets, see where the user is mentioned, also for returning the tweets with hashtags, we have used JSON GET requests
 * We have used various map data structures for storing the data entered by user.
 * The websocket connection is established by the twitter.html and the actor model, which we have implemeted for simulating the live users, we have changed to add the different functionalities for the twitter server and having the websocket to communicate with the client
 
+## Built On:
+Programming language: F#
+Framework: AKKA.NET, Suave, Websocket, Newtonsoft.Json
+Operating System: Windows
+Programming Platform: Visual Studio Code
+Run on i7 4 Core Windows 10 Dell Machine, i3 2 Core Windows 10 Lenovo
