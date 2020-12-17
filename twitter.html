@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </head>
-<body onload = "loginload()">
+<body onload = "loadEnter()">
     <body style="background-color:rgb(9, 10, 1);"></body>
     <nav>
         <div class="nav-wrapper red lighten-2">
@@ -32,22 +32,22 @@
                 <tr class="row">
                     <td class="col-sm">
                         <div id ="register">
-                            <label for="runame" style="color:rgb(249, 250, 190); font-family: Verdana; font-weight: bold; font-size: 12px;">User Name:</label>
+                            <label for="runame" style="color:rgb(249, 250, 190); font-family: Verdana; font-weight: bold; font-size: 12px;">UserID:</label>
                             <input type="text" STYLE="color: #FFFFFF; font-family: Verdana; font-weight: bold; font-size: 12px; background-color: #666666;" id="runame" name="fname"><br><br>
                             <label for="rpass" style="color:rgb(249, 250, 190); font-family: Verdana; font-weight: bold; font-size: 12px;">Password:</label>
                             <input type="password" STYLE="color: #FFFFFF; font-family: Verdana; font-weight: bold; font-size: 12px; background-color: #666666;" id="rpass" name="pwd"><br><br>
-                            <button class="btn waves-effect waves-light" type="submit" name="action" onclick="register()">Register</button>
+                            <button class="btn waves-effect waves-light" type="submit" name="action" onclick="register()">Register User</button>
                         </div>
                     </td>
                 </tr>
                 <tr class="row">
                     <td class="col-sm">
                         <div id ="login">
-                            <label for="luname" style="color:rgb(249, 250, 190); font-family: Verdana; font-weight: bold; font-size: 12px;">User Name:</label>
+                            <label for="luname" style="color:rgb(249, 250, 190); font-family: Verdana; font-weight: bold; font-size: 12px;">UserID:</label>
                             <input type="text" STYLE="color: #FFFFFF; font-family: Verdana; font-weight: bold; font-size: 12px; background-color: #666666;" id="luname" name="fname"><br><br>
                             <label for="lpass" style="color:rgb(249, 250, 190); font-family: Verdana; font-weight: bold; font-size: 12px;">Password:</label>
                             <input type="password" STYLE="color: #FFFFFF; font-family: Verdana; font-weight: bold; font-size: 12px; background-color: #666666;" id="lpass" name="pwd"><br><br>
-                            <button class="btn waves-effect waves-light" type="submit" name="action" onclick="login()">Login</button>
+                            <button class="btn waves-effect waves-light" type="submit" name="action" onclick="login()">Enter</button>
                         </div>
                     </td>
                 </tr>
@@ -60,61 +60,55 @@
             <tbody>
                 <div class="container">
                     <tr class="row">
-                        <td class="col-sm">
+                        
                             <div id = "divtweet">
                                 <label for="tweet" style="color:rgb(249, 250, 190); font-family: Verdana; font-weight: bold; font-size: 12px;">Tweet:</label>
                                 <input type="text" STYLE="color: #FFFFFF; font-family: Verdana; font-weight: bold; font-size: 12px; background-color: #666666;" id="tweet" name="tweet"><br><br>
-                                <button class="btn waves-effect waves-light" type="submit" name="tweet" onclick="tweet()">Tweet</button>
+                                <button class="btn waves-effect waves-light" type="submit" name="tweet" onclick="tweet()">Send Tweet</button>
                             </div>
-                        </td>
-                        <td class="col-sm">
+                        
+                        
                             <div id = "divfollower">
                                 <label for="follower" style="color:rgb(249, 250, 190); font-family: Verdana; font-weight: bold; font-size: 12px;">Follow:</label>
                                 <input type="text" STYLE="color: #FFFFFF; font-family: Verdana; font-weight: bold; font-size: 12px; background-color: #666666;" id="follower" name="follower"><br><br>
-                                <button class="btn waves-effect waves-light" type="submit" name="follow" onclick="follow()">Follow</button>
+                                <button class="btn waves-effect waves-light" type="submit" name="follow" onclick="follow()">Subscribe</button>
                             </div>
-                        </td>
+                        
                     </tr>
                 </div>
                 <div class="container">
                     <tr class="row">
-                        <td class="col-sm">
                             <div id = "GetTweets">
                                 <label for="gettweets" style="color:rgb(249, 250, 190); font-family: Verdana; font-weight: bold; font-size: 12px;">Tweets:</label><br>
                                 <textarea id="gettweets" name="gettweets" rows="10" cols="50" disabled style="height: 50%; background-color: #FFFFFF;"></textarea><br><br>
                                 <div id ="dtweets"></div>
-                                <button class="btn waves-effect waves-light" type="submit" name="gettweets" onclick="gettweets()">Get Tweets</button>
+                                <button class="btn waves-effect waves-light" type="submit" name="gettweets" onclick="gettweets()">Tweets</button>
                             </div>
-                        </td>
-                        <td class="col-sm">
                             <div id = "GetHashTags">
                                 <label for="gethashtags" style="color:rgb(249, 250, 190); font-family: Verdana; font-weight: bold; font-size: 12px;">Hashtags:</label>
                                 <textarea id="gethashtags" name="gethashtags" rows="10" cols="50" disabled style="height: 50%; background-color: #FFFFFF;"></textarea><br>
                                 <label for="hashtag" style="color:rgb(249, 250, 190); font-family: Verdana; font-weight: bold; font-size: 12px;">Hashtag</label>
                                 <input type="text" STYLE="color: #FFFFFF; font-family: Verdana; font-weight: bold; font-size: 12px;  background-color: #666666;" id="hashtag" name="hashtag"><br>
-                                <button class="btn waves-effect waves-light" type="submit" name="gethashtags" onclick="gethashtags()">Get HashTags</button>
+                                <button class="btn waves-effect waves-light" type="submit" name="gethashtags" onclick="gethashtags()">Search HashTags</button>
                             </div>
-                        </td>
-                        <td class="col-sm">
                             <div id = "GetMentions">
                                 <label for="getmentions" style="color:rgb(249, 250, 190); font-family: Verdana; font-weight: bold; font-size: 12px;">Mentions:</label>
                                 <textarea id="getmentions" name="getmentions" rows="10" cols="50" disabled style="height: 50%;  background-color: #FFFFFF;"></textarea><br><br>
-                                <button class="btn waves-effect waves-light" type="submit" name="getmentions" onclick="getmentions()">Get Mentions</button>
+                                <button class="btn waves-effect waves-light" type="submit" name="getmentions" onclick="getmentions()">Your Mentions</button>
                             </div>
-                        </td>
                     </tr>
                 </div>
             </tbody>
             </table>
             <div id="output">
-                <h3>Live Feed</h3>
+                <h3 STYLE="color: #FFFFFF;">Activities On going</h3>
             </div>
         </div>
         
     </div>
     <script type="text/javascript">
         var username = ""
-        function loginload(){
+        function loadEnter(){
             
             document.getElementById("full").style.display="none";
             document.getElementById("logouthead").style.display="none";
@@ -205,7 +199,7 @@
                     }else{
                         
                     }
-                    loginload();
+                    loadEnter();
                     username = "";
                 }
             });
@@ -225,7 +219,7 @@
                     if(data.error){
                         alert(data.Comment);
                         if(data.status < 2){
-                            loginload();
+                            loadEnter();
                         }
                     }else{ 
                     }
@@ -249,7 +243,7 @@
                     if(data.error){
                         alert(data.Comment);
                         if(data.status < 2){
-                            loginload();
+                            loadEnter();
                         } 
                     }else{
                     }
@@ -270,7 +264,7 @@
                     if(data.error){
                         alert(data.Comment);
                         if(data.status < 2){
-                            loginload();
+                            loadEnter();
                         }
                     }else{
                         var text = "";
@@ -295,7 +289,7 @@
                     if(data.error){
                         alert(data.Comment);
                         if(data.status < 2){
-                            loginload();
+                            loadEnter();
                         } 
                     }else{
                         var text = "";
@@ -320,7 +314,7 @@
                     if(data.error){
                         alert(data.Comment);
                         if(data.status < 2){
-                            loginload();
+                            loadEnter();
                         }
                     }else{
                         var text = "";
