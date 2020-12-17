@@ -69,7 +69,7 @@
                         
                         
                             <div id = "divfollower">
-                                <label for="follower" style="color:rgb(249, 250, 190); font-family: Verdana; font-weight: bold; font-size: 12px;">Follow:</label>
+                                <label for="follower" style="color:rgb(249, 250, 190); font-family: Verdana; font-weight: bold; font-size: 12px;">Subscribe:</label>
                                 <input type="text" STYLE="color: #FFFFFF; font-family: Verdana; font-weight: bold; font-size: 12px; background-color: #666666;" id="follower" name="follower"><br><br>
                                 <button class="btn waves-effect waves-light" type="submit" name="follow" onclick="follow()">Subscribe</button>
                             </div>
@@ -340,19 +340,19 @@
         }
         function onOpen(evt)
         {
-            writeToScreen('<span style="color: yellow;"> ' + "CONNECTED To Server" +'</span>');
+            writeToScreen('<span style="color: yellow;"> ' + "Server connection sucessful!" +'</span>');
             var message = "UserName:"+username;
             doSend(message);
         }
 
         function onClose(evt)
         {
-            writeToScreen('<span style="color: yellow;"> ' + "DISCONNECTED to the Server" + '</span>');
+            writeToScreen('<span style="color: yellow;"> ' + "Server disconnected sucessfully!" + '</span>');
         }
 
         function onMessage(evt)
         {
-            writeToScreen('<span style="color: blue;"> ' + evt.data+'</span>');
+            writeToScreen('<span style="color: orange;"> ' + evt.data+'</span>');
         }
 
         function onError(evt)
