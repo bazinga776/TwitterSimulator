@@ -498,13 +498,6 @@ let websocketHandler (webSocket : WebSocket) (context: HttpContext) =
                 loop <- false
               | _ -> ()
     }
-// let mutable id =1
-// let startWS (webSocket : WebSocket) (context: HttpContext) =
-//     let wshref = spawn system (string id) WebSocketHandler
-//     id <- id + 1
-//     printfn "%d" id
-//     wshref <! Initialize(webSocket,context)
-
 
 
 let allow_cors : WebPart =
