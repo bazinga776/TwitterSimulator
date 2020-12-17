@@ -25,8 +25,8 @@ Video Explanation Link: https://youtu.be/CtXOuetXROo
 * The websocket connection is established by the twitter.html and the actor model, which we have implemeted for simulating the live users, we have changed to add the different functionalities for the twitter server and having the websocket to communicate with the client
 
 ## Built On:
-Programming language: F#
-Framework: AKKA.NET, Suave, Websocket, Newtonsoft.Json
-Operating System: Windows
-Programming Platform: Visual Studio Code
-Run on i7 4 Core Windows 10 Dell Machine, i3 2 Core Windows 10 Lenovo
+* Programming language: F#
+* Framework: AKKA.NET, Suave, Websocket, Newtonsoft.Json
+* Operating System: Windows
+* Programming Platform: Visual Studio Code
+* Run on i7 4 Core Windows 10 Dell Machine, i3 2 Core Windows 10 Lenovo
